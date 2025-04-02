@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Loading from './components/shared/Loading';
@@ -22,10 +23,11 @@ const TermsOfService = lazy(() => import('./pages/TermsOfService'));
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      {/* Add SEO component with default values */}
-      <SEO />
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        {/* Add SEO component with default values */}
+        <SEO />
       <div className="relative min-h-screen flex flex-col">
         <Navbar />
         <div className="flex-grow">
@@ -49,7 +51,8 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+      </Router>
+    </HelmetProvider>
   );
 }
 

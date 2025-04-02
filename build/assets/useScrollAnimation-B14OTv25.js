@@ -1,0 +1,2 @@
+import{r as a}from"./three-vendor-DjlrdrKN.js";function f(c={}){const n=a.useRef(null),{threshold:i=.1,rootMargin:o="0px",triggerOnce:t=!0}=c;return a.useEffect(()=>{const s=new IntersectionObserver(([r])=>{r.isIntersecting?(r.target.classList.add("animate-in-view"),t&&s.unobserve(r.target)):t||r.target.classList.remove("animate-in-view")},{threshold:i,rootMargin:o}),e=n.current;return e&&s.observe(e),()=>{e&&s.unobserve(e)}},[i,o,t]),n}export{f as u};
+//# sourceMappingURL=useScrollAnimation-B14OTv25.js.map
