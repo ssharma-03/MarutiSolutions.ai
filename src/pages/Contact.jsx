@@ -3,6 +3,9 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/shared/SEO';
 import { saveFormSubmission, exportSubmissionsAsJson } from '../utils/formStorage';
+
+// Google Sheets Web App URL - Replace with your deployed script URL
+const GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_SHEETS_WEB_APP_URL';
  
 export default function Contact() {
   const formRef = useScrollAnimation();
