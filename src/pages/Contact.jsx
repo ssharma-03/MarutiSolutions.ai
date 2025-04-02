@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/shared/SEO';
 import { saveFormSubmission, exportSubmissionsAsJson } from '../utils/formStorage';
-
+ 
 export default function Contact() {
   const formRef = useScrollAnimation();
   const contactRef = useScrollAnimation();

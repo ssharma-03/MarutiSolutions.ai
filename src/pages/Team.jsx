@@ -12,6 +12,7 @@ const teamMembers = [
     linkedin: 'https://in.linkedin.com/in/adityasharma31',
     twitter: 'https://x.com/CEO_Maruti'
   },
+  
   {
     name: 'Somya Sharma',
     role: 'Co Founder and Chief Technology Officer',
